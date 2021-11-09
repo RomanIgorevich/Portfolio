@@ -60,3 +60,27 @@ export default {
   },
 };
 </script>
+
+<style lang="scss">
+.skill {
+  padding-top: $padding * 3;
+}
+.skill__inner {
+  background: $fon;
+  padding: $padding * 3;
+  box-shadow: 0px 5px 15px 0px rgba(128, 127, 127, 0.3);
+}
+.skill__title {
+  text-align: center;
+  font-size: $font-size-title;
+  padding-bottom: $padding/2;
+}
+.li-skill {
+  list-style: inside;
+  padding-left: 20px;
+}
+.skill__text {
+  padding-top: $padding;
+  padding-bottom: $padding/4;
+}
+</style>

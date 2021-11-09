@@ -123,3 +123,58 @@ export default {
   },
 };
 </script>
+
+<style lang="scss">
+.portfolio {
+  padding-top: $padding * 3;
+}
+.portfolio__inners {
+  background: $fon;
+  padding: $padding * 3 $padding * 1.5 $padding * 1.5;
+  box-shadow: 0px 5px 15px 0px rgba(128, 127, 127, 0.3);
+}
+.portfolio__title {
+  font-size: $font-size-title;
+  padding-bottom: $padding * 2;
+  text-align: center;
+}
+.portfolio__inner {
+  display: flex;
+  justify-content: flex-start;
+  align-content: stretch;
+  flex-wrap: wrap;
+}
+.portfolio__card-wrapper {
+  padding: 0 $padding * 1.5;
+  width: 33.3%;
+  cursor: pointer;
+  margin-bottom: $padding * 3;
+}
+.portfolio__card {
+  max-width: 100%;
+  height: 100%;
+  background: $background;
+  box-shadow: 12px 12px 2px 1px rgba(80, 80, 83, 0.2);
+  border: 1px solid #dad5d5;
+  transition: all 0.5s;
+}
+.portfolio__card:hover {
+  transform: scale(1.25);
+}
+.img-wrapper {
+  overflow: hidden;
+  padding: $padding;
+}
+.img-wrapper img {
+  border: 1px solid #dad5d5;
+}
+.portfolio__card h3,
+.portfolio__card p {
+  color: $color;
+  padding: 0 $padding $padding/4 * 3 $padding;
+  text-align: left;
+}
+.img-wrapper img {
+  width: 100%;
+}
+</style>

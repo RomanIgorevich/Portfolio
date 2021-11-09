@@ -3,9 +3,9 @@
     <navbar />
     <a name="info"></a>
     <info />
-    <a name="skill"></a>
+    <a class="indent" name="skill"></a>
     <skill />
-    <a name="portfolio"></a>
+    <a class="indent" name="portfolio"></a>
     <portfolio />
   </div>
 </template>
@@ -26,3 +26,12 @@ export default {
   },
 };
 </script>
+
+<style lang="scss">
+.indent {
+  display: block;
+  content: "";
+  height: 70px;
+  margin: -70px 0 0 0;
+}
+</style>
